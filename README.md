@@ -1,14 +1,19 @@
 # Interactive Bayesian Network Playground with Inference Visualizations
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Coverage](https://img.shields.io/badge/coverage-90%25-yellowgreen)
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-orange)
 
-## 🧠 Abstract
+##  Abstract
 
-This project implements an interactive web-based interface for constructing, visualizing, and performing inference on Bayesian Networks. The system provides an intuitive graphical interface for defining network topology, conditional probability tables (CPTs), and running various inference algorithms. Advanced visualization capabilities include likelihood heatmaps, belief propagation animations, and real-time inference results. The implementation leverages pgmpy for robust probabilistic inference and Streamlit for responsive web deployment, enabling both educational and research applications in probabilistic reasoning.
+This project implements an interactive web based interface for constructing, visualizing, and performing inference on Bayesian Networks. The system provides an intuitive graphical interface for defining network topology, conditional probability tables (CPTs), and running various inference algorithms. Advanced visualization capabilities include likelihood heatmaps, belief propagation animations, and real time inference results. The implementation leverages pgmpy for robust probabilistic inference and Streamlit for responsive web deployment, enabling both educational and research applications in probabilistic reasoning.
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Bayesian Networks are powerful tools for modeling probabilistic relationships between variables, with applications spanning medical diagnosis, risk assessment, and decision support systems. However, existing tools often lack intuitive interfaces for network construction and limited visualization capabilities for understanding inference processes. This project addresses the need for an accessible, interactive platform that enables users to:
 
-- Visually construct Bayesian Networks through drag-and-drop interfaces
+- Visually construct Bayesian Networks through drag and drop interfaces
 - Define and validate conditional probability distributions
 - Perform various types of inference (exact and approximate)
 - Visualize inference results through heatmaps and belief propagation
@@ -16,9 +21,9 @@ Bayesian Networks are powerful tools for modeling probabilistic relationships be
 
 **Research Context**: Interactive Bayesian Network tools are crucial for educational purposes and applied research in artificial intelligence, particularly in domains requiring interpretable probabilistic reasoning.
 
-## 📊 Dataset Description
+##  Dataset Description
 
-The project includes several pre-built Bayesian Network examples:
+The project includes several pre built Bayesian Network examples:
 
 - **Medical Diagnosis Network**: 8 nodes representing symptoms and diseases
 - **Student Performance Network**: 6 nodes modeling academic factors
@@ -29,7 +34,7 @@ The project includes several pre-built Bayesian Network examples:
 
 **Preprocessing**: All networks undergo validation to ensure acyclic structure and proper probability distributions (summing to 1.0 for each CPT).
 
-## 🧪 Methodology
+##  Methodology
 
 ### Core Architecture
 The system employs a modular architecture with three primary components:
@@ -63,7 +68,7 @@ The system implements multiple inference approaches:
 - **Inference Heatmaps**: Color-coded belief updates across network states
 - **Belief Propagation**: Animated visualization of message passing
 
-## 📈 Results
+##  Results
 
 ### Performance Metrics
 | Network Type | Nodes | Edges | Inference Time (ms) | Memory Usage (MB) |
@@ -83,7 +88,7 @@ The system implements multiple inference approaches:
 - **CPT Definition Time**: Average 1.8 minutes per node
 - **Inference Response Time**: <100ms for networks up to 15 nodes
 
-## 🧠 Explainability / Interpretability
+##  Explainability / Interpretability
 
 The system provides multiple levels of interpretability:
 
@@ -102,7 +107,7 @@ The system provides multiple levels of interpretability:
 - **Risk Assessment**: Quantify uncertainty in decision-making processes
 - **Educational Value**: Demonstrate probabilistic concepts through interactive examples
 
-## ⚗️ Experiments & Evaluation
+##  Experiments & Evaluation
 
 ### Experimental Setup
 - **Cross-validation**: 5-fold validation on synthetic networks
@@ -110,7 +115,7 @@ The system provides multiple levels of interpretability:
 - **Ablation Studies**: Testing impact of network structure on inference accuracy
 
 ### Comparative Analysis
-- **Algorithm Comparison**: Exact vs. approximate inference methods
+- **Algorithm Comparison**: Exact vs approximate inference methods
 - **Network Size Scaling**: Performance analysis with increasing network complexity
 - **Evidence Sensitivity**: Impact of evidence strength on inference reliability
 
@@ -119,7 +124,7 @@ The system provides multiple levels of interpretability:
 - **Real-world Networks**: Comparison with established Bayesian Network benchmarks
 - **User Studies**: Interface usability and learning effectiveness assessment
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Interactive-Bayesian-Network-Playground/
@@ -168,7 +173,7 @@ Interactive-Bayesian-Network-Playground/
 └── run_app.py                  # Application launcher
 ```
 
-## 💻 How to Run
+##  How to Run
 
 ### Prerequisites
 - Python 3.8+
@@ -178,7 +183,7 @@ Interactive-Bayesian-Network-Playground/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Interactive-Bayesian-Network-Playground.git
+   git clone https://github.com/Aqib121201/Interactive-Bayesian-Network-Playground.git
    cd Interactive-Bayesian-Network-Playground
    ```
 
@@ -211,7 +216,7 @@ docker run -p 8501:8501 bayesian-network-playground
 ### Access the Application
 Open your browser and navigate to: `http://localhost:8501`
 
-## 🧪 Unit Tests
+##  Unit Tests
 
 Run the test suite to verify functionality:
 ```bash
@@ -227,7 +232,7 @@ pytest tests/test_bayesian_network.py
 
 **Test Coverage**: >90% for core modules
 
-## 📚 References
+##  References
 
 1. Koller, D., & Friedman, N. (2009). *Probabilistic Graphical Models: Principles and Techniques*. MIT Press.
 
@@ -241,7 +246,7 @@ pytest tests/test_bayesian_network.py
 
 6. pgmpy Documentation. (2023). *Probabilistic Graphical Models using Python*. Retrieved from https://pgmpy.org/
 
-## ⚠️ Limitations
+##  Limitations
 
 - **Computational Complexity**: Exact inference becomes intractable for networks with >20 nodes
 - **Discrete Variables Only**: Current implementation supports only discrete random variables
@@ -253,12 +258,10 @@ pytest tests/test_bayesian_network.py
 
 [📄 Download Full Academic Report](./report/Bayesian_Network_Playground_Report.pdf)
 
-## 🧠 Contribution & Acknowledgements
+##  Contribution & Acknowledgements
 
 This project was developed as an educational and research tool for probabilistic reasoning and Bayesian Network applications. Special thanks to the pgmpy development team for providing the robust inference backend, and to the Streamlit community for the excellent web framework.
 
-**Contributors**: [Your Name/Team]
-
-**Institution**: [Your Institution]
+**Contributors**: Aqib Siddiqui
 
 **License**: MIT License - see LICENSE file for details.
