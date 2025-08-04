@@ -254,9 +254,6 @@ pytest tests/test_bayesian_network.py
 - **Approximation Errors**: Approximate inference methods may introduce sampling errors
 - **User Interface**: Advanced features require technical background in probabilistic reasoning
 
-## 📄 PDF Report
-
-[📄 Download Full Academic Report](./report/Bayesian_Network_Playground_Report.pdf)
 
 ##  Contribution & Acknowledgements
 
